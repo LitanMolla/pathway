@@ -29,9 +29,9 @@ const YourJuorney = () => {
                 />
               </div>
             </div>
-            <div className="z-10 max-w-120 absolute top-0 left-20 md:left-50 lg:left-90">
+            <div className="z-10 max-w-200 absolute top-0 left-20 md:left-50 lg:left-90">
               <p className="text-2xl lg:text-[32px] font-semibold text-white">Step 1</p>
-              <h3 className="text-4xl md:text-5xl lg:text-6xl text-primary font-extrabold pr-5">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl text-primary font-extrabold pr-5 uppercase">
                 Choose your pathway
               </h3>
               <P18
@@ -40,14 +40,14 @@ const YourJuorney = () => {
                 }
                 className={"text-white pr-5 py-4"}
               />
-              <Button className={"bg-blue-200! lg:bg-secondary"}>Our Programmes</Button>
+              {/* <Button className={"bg-blue-200! lg:bg-secondary"}>Our Programmes</Button> */}
             </div>
             <div className="relative my-60 lg:my-78 flex lg:justify-end">
-              <div className="z-10 max-w-120 absolute top-0 left-20 md:left-50 lg:left-0">
+              <div className="z-10 max-w-200 absolute top-0 left-20 md:left-50 lg:left-0">
                 <p className="text-2xl lg:text-[32px] font-semibold text-white">
                   Step 2
                 </p>
-                <h3 className="text-4xl md:text-5xl lg:text-6xl text-primary font-extrabold lg:pr-19">
+                <h3 className="text-4xl md:text-5xl lg:text-6xl text-primary font-extrabold uppercase">
                   Support with every step
                 </h3>
                 <P18
@@ -56,7 +56,7 @@ const YourJuorney = () => {
                   }
                   className={"text-white lg:pr-21 py-4"}
                 />
-                <Button className={"bg-blue-200!"}>How we support you</Button>
+                {/* <Button className={"bg-blue-200!"}>How we support you</Button> */}
               </div>
               <div className="relative w-17 h-17 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-full bg-yellow-100 z-10">
                 <div className="w-full h-full rounded-full overflow-hidden">
@@ -76,11 +76,12 @@ const YourJuorney = () => {
                   />
                 </div>
               </div>
-              <div className="z-10 max-w-121 absolute top-0 left-20 md:left-50 lg:left-90 ">
+              {/* ============================================ */}
+              <div className="z-10 max-w-200 absolute top-0 left-20 md:left-50 lg:left-90 ">
                 <p className="text-2xl lg:text-[32px] font-semibold text-white">
                   Step 3
                 </p>
-                <h3 className="text-4xl md:text-5xl lg:text-6xl text-primary font-extrabold">
+                <h3 className="text-4xl md:text-5xl lg:text-6xl text-primary font-extrabold uppercase">
                   Gain entry to your dream university
                 </h3>
                 <P18
@@ -89,7 +90,7 @@ const YourJuorney = () => {
                   }
                   className={"text-white pr-5 py-4"}
                 />
-                <Button className={"bg-blue-200!"}>Explore universities</Button>
+                {/* <Button className={"bg-blue-200!"}>Explore universities</Button> */}
               </div>
             </div>
           </div>

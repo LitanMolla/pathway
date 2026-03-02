@@ -50,9 +50,9 @@ const Navbar = () => {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg font-medium transition-all duration-200 text-base ${
+                    `px-3 py-2 font-medium text-base uppercase ${
                       isActive
-                        ? "bg-blue-50 text-primary border-b-2 border-primary shadow-md"
+                        ? " text-primary border-b-2 border-primary shadow-lg"
                         : "text-secondary hover:text-primary hover:bg-gray-50"
                     }`
                   }
@@ -65,9 +65,9 @@ const Navbar = () => {
                 <NavLink
                   to="/about-us"
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg font-medium transition-all duration-200 text-base ${
+                    `px-3 py-2 font-medium text-base uppercase ${
                       isActive
-                        ? "bg-blue-50 text-primary border-b-2 border-primary shadow-md"
+                        ? " text-primary border-b-2 border-primary shadow-lg"
                         : "text-secondary hover:text-primary hover:bg-gray-50"
                     }`
                   }
@@ -80,9 +80,9 @@ const Navbar = () => {
                 <NavLink
                   to="/university"
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg font-medium transition-all duration-200 text-base ${
+                    `px-3 py-2 font-medium text-base uppercase ${
                       isActive
-                        ? "bg-blue-50 text-primary border-b-2 border-primary shadow-md  "
+                        ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary hover:bg-gray-50"
                     }`
                   }
@@ -95,9 +95,9 @@ const Navbar = () => {
                 <NavLink
                   to="/our-services"
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg font-medium transition-all duration-200 text-base ${
+                    `px-3 py-2 font-medium text-base uppercase ${
                       isActive
-                        ? "bg-blue-50 text-primary border-b-2 border-primary shadow-md  "
+                        ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary hover:bg-gray-50"
                     }`
                   }
@@ -110,9 +110,9 @@ const Navbar = () => {
                 <NavLink
                   to="/blogs"
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg font-medium transition-all duration-200 text-base ${
+                    `px-3 py-2 font-medium text-base uppercase ${
                       isActive
-                        ? "bg-blue-50 text-primary border-b-2 border-primary shadow-md  "
+                        ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary hover:bg-gray-50"
                     }`
                   }
@@ -125,9 +125,9 @@ const Navbar = () => {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg font-medium transition-all duration-200 text-base ${
+                    `px-3 py-2 font-medium text-base uppercase ${
                       isActive
-                        ? "bg-blue-50 text-primary border-b-2 border-primary shadow-md  "
+                        ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary hover:bg-gray-50"
                     }`
                   }
@@ -137,58 +137,6 @@ const Navbar = () => {
               </li>
             </ul>
 
-            {/* ======== desktop login btn ====== */}
-            <button className="relative" onClick={() => setLogin(!login)}>
-              <div
-                className={`${
-                  login
-                    ? "border border-secondary bg-secondary"
-                    : "bg-transparent"
-                } 
-              group hover:bg-secondary transition duration-300 flex items-center border border-secondary lg:py-2 lg:px-3 rounded-full cursor-pointer
-              `}
-                onClick={() => setLogin(!login)}
-              >
-                <FaRegCircleUser
-                  className={`${login ? "text-white" : "text-secondary"}
-                text-secondary text-3xl group-hover:text-white transition duration-300`}
-                />
-                <div className="flex">
-                  <PBase
-                    text={"Login"}
-                    className={`${login ? "text-white" : "text-secondary"} text-secondary pl-2 font-medium group-hover:text-white transition duration-300`}
-                  />
-                  <FaSortDown
-                    className={`${login ? "text-white" : "text-secondary"}
-                  text-secondary group-hover:text-white transition duration-300
-                  `}
-                  />
-                </div>
-              </div>
-              {login && (
-                <>
-                  <div
-                    className="fixed inset-0 z-40"
-                    onClick={() => setLogin(false)}
-                  ></div>
-                  <div className="absolute top-12 right-0 py-2 bg-secondary/50 rounded-sm border z-50">
-                    <NavLink to={"login"}>
-                      <div className="flex items-center gap-x-4 hover:bg-gray-100/30 text-center py-1 pl-4 pr-16 cursor-pointer">
-                        <FaUserGraduate className="text-white" />
-                        <PBase text={"Student"} className={" text-white"} />
-                      </div>
-                    </NavLink>
-                    <NavLink to={"login"}>
-                      <div className="flex items-center gap-x-4 hover:bg-gray-100/30 text-center py-1 pl-4 pr-16 cursor-pointer">
-                        <FaUserTie className="text-white" />
-                        <PBase text={"Agent"} className={" text-white"} />
-                      </div>
-                    </NavLink>
-                  </div>
-                </>
-              )}
-            </button>
-            {/* ======== desktop login btn ====== */}
           </div>
         </div>
       </Container>
@@ -204,78 +152,7 @@ const Navbar = () => {
           {/* Logo */}
 
           <div className="flex items-center gap-x-3 ">
-            {/* Mobile Login Button */}
-            <div className="relative">
-              <div
-                className={`${
-                  login
-                    ? "border border-secondary bg-secondary shadow-lg"
-                    : "bg-transparent"
-                } 
-                  group hover:bg-secondary transition-all duration-300 flex items-center border border-secondary py-0.5 pl-1 pr-2 rounded-full cursor-pointer w-full justify-center`}
-                onClick={() => setLogin(!login)}
-              >
-                <FaRegCircleUser
-                  className={`${
-                    login ? "text-white" : "text-secondary"
-                  } text-[21px] mr-1 group-hover:text-white transition duration-300`}
-                />
-                <div className="flex items-baseline">
-                  <PBase
-                    text="Login"
-                    className={`${
-                      login ? "text-white" : "text-secondary"
-                    } font-medium group-hover:text-white transition duration-300`}
-                  />
-                  <FaSortDown
-                    className={`${login ? "text-white" : "text-secondary"}
-                  text-secondary text-sm group-hover:text-white transition duration-300
-                  `}
-                  />
-                </div>
-              </div>
-
-              {/* Mobile Dropdown */}
-              {login && (
-                <>
-                  <div
-                    className="fixed inset-0 z-30"
-                    onClick={() => setLogin(false)}
-                  ></div>
-                  <div className="absolute top-6.5 right-0 bg-secondary/50 backdrop-blur-sm rounded-lg border shadow-xl py-2 z-50">
-                   <NavLink to={"login"}>
-                     <div className="flex items-center gap-x-4 hover:bg-gray-100/30 text-white py-1 px-5 cursor-pointer transition-all duration-200">
-                      <FaUserGraduate className="text-sm md:text-md" />
-                      <PBase
-                        text="Student"
-                        className="text-white font-medium"
-                      />
-                    </div>
-                   </NavLink>
-                    <NavLink to={"login"}>
-                      <div className="flex items-center gap-x-4 hover:bg-gray-100/30 text-white py-1 px-5 cursor-pointer transition-all duration-200">
-                      <FaUserTie className="text-sm md:text-md" />
-                      <PBase text="Agent" className="text-white font-medium" />
-                    </div>
-                    </NavLink>
-                  </div>
-                  {/* <div className="absolute top-6.5 right-0 bg-secondary/50 backdrop-blur-sm rounded-lg border shadow-xl py-2">
-                    <div className="flex items-center gap-x-4 hover:bg-gray-100/30 text-white py-1 px-5 cursor-pointer transition-all duration-200">
-                      <FaUserGraduate className="text-sm md:text-md" />
-                      <PBase
-                        text="Student"
-                        className="text-white font-medium"
-                      />
-                    </div>
-                    <div className="flex items-center gap-x-4 hover:bg-gray-100/30 text-white py-1 px-5 cursor-pointer transition-all duration-200">
-                      <FaUserTie className="text-sm md:text-md" />
-                      <PBase text="Agent" className="text-white font-medium" />
-                    </div>
-                  </div> */}
-                </>
-              )}
-            </div>
-            {/* Mobile menu button */}
+            
             <button
               className="lg:hidden "
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -302,9 +179,9 @@ const Navbar = () => {
                   <NavLink
                     to="/"
                     className={({ isActive }) =>
-                      `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      `block px-4 py-3 font-medium${
                         isActive
-                          ? "bg-blue-50 text-primary border-b-2 border-primary"
+                          ? " text-primary border-b-2 border-primary shadow-lg"
                           : "text-secondary hover:text-primary hover:bg-gray-50"
                       }`
                     }
@@ -317,9 +194,9 @@ const Navbar = () => {
                   <NavLink
                     to="/about-us"
                     className={({ isActive }) =>
-                      `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      `block px-4 py-3 font-medium${
                         isActive
-                          ? "bg-blue-50 text-primary border-b-2 border-primary"
+                          ? " text-primary border-b-2 border-primary shadow-lg"
                           : "text-secondary hover:text-primary hover:bg-gray-50"
                       }`
                     }
@@ -332,9 +209,9 @@ const Navbar = () => {
                   <NavLink
                     to="/university"
                     className={({ isActive }) =>
-                      `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      `block px-4 py-3 font-medium${
                         isActive
-                          ? "bg-blue-50 text-primary border-b-2 border-primary"
+                          ? " text-primary border-b-2 border-primary shadow-lg"
                           : "text-secondary hover:text-primary hover:bg-gray-50"
                       }`
                     }
@@ -347,9 +224,9 @@ const Navbar = () => {
                   <NavLink
                     to="/our-services"
                     className={({ isActive }) =>
-                      `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      `block px-4 py-3 font-medium${
                         isActive
-                          ? "bg-blue-50 text-primary border-b-2 border-primary"
+                          ? " text-primary border-b-2 border-primary shadow-lg"
                           : "text-secondary hover:text-primary hover:bg-gray-50"
                       }`
                     }
@@ -362,9 +239,9 @@ const Navbar = () => {
                   <NavLink
                     to="/blogs"
                     className={({ isActive }) =>
-                      `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      `block px-4 py-3 font-medium${
                         isActive
-                          ? "bg-blue-50 text-primary border-b-2 border-primary"
+                          ? " text-primary border-b-2 border-primary shadow-lg"
                           : "text-secondary hover:text-primary hover:bg-gray-50"
                       }`
                     }
@@ -379,7 +256,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
                         isActive
-                          ? "bg-blue-50 text-primary border-b-2 border-primary"
+                          ? "bg-tertiary text-primary border-b-2 border-primary"
                           : "text-secondary hover:text-primary hover:bg-gray-50"
                       }`
                     }
