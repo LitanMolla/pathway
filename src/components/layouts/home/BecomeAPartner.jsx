@@ -10,13 +10,13 @@ const BecomeAPartner = () => {
     <>
       <section>
         <Container>
-          <div className="py-5 md:py-16 px-8 md:px-22 bg-primary rounded-2xl md:flex justify-between">
+          <div className="py-5 md:py-16 px-8 md:px-22 text-center md:text-left bg-primary rounded-2xl md:flex justify-between">
             <p className="text-white font-extrabold text-3xl">
               Become A Partner
             </p>
             <div className="relative mt-5 md:mt-0 flex justify-center md:flex-none">
               <div
-                className="absolute md:-right-6 -top-5 md:-top-11 animate-spin"
+                className="absolute md:-right-10 -top-5 md:-top-11 animate-spin"
                 style={{ animationDuration: "6s" }}
               >
                 <img src={round} alt="" className="size-20 md:size-33" />

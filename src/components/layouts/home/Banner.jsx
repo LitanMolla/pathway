@@ -77,7 +77,7 @@ const Banner = () => {
                 We simplify everything, from selecting the perfect university to
                 obtaining your student visa.
               </p>
-              <div className="max-w-135 flex items-center z-10">
+              {/* <div className="max-w-135 flex items-center z-10">
                 <div className="w-full">
                   <Select
                     options={universities}
@@ -89,7 +89,7 @@ const Banner = () => {
                     maxMenuHeight="160px"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* ======================================= */}
@@ -141,12 +141,6 @@ const Banner = () => {
                         text={"Unlock global education with a student visa!"}
                         className={"text-white py-1.5 md:py-2.5"}
                       />
-                      <div className="w-fit m-auto md:m-0 md:w-30 py-1 md:py-2 px-2 md:px-2 rounded-xl border border-white text-center">
-                        <PBase
-                          text={"Connect Now"}
-                          className={"animate-bounce text-white font-medium"}
-                        />
-                      </div>
                     </div>
                   </div>
                   {/* ==============box two======== */}
@@ -190,7 +184,7 @@ const Banner = () => {
           </div>
         </Container>
       </section>
-      <div className="bg-[#e5e0d0] py-2 lg:py-6">
+      <div className="bg-[#f3e6be] py-2 lg:py-6">
         <Marquee speed={80} gradient={false} pauseOnHover={true}>
           {university_logo.map((uni, index) => (
             <div key={index} className="mx-10 flex items-center justify-center">

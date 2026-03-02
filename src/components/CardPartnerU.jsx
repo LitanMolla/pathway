@@ -1,22 +1,33 @@
 import React from "react";
 import { Link } from "react-router";
 
-const CardPartnerU = ({ image, alt, heading, description, to, target}) => {
+const CardPartnerU = ({
+  image,
+  alt,
+  heading,
+  description,
+  to,
+  target,
+  className,
+}) => {
   return (
     <>
-        <div className="block w-full p-6 border border-gray-300 rounded-xl shadow-xs">
-          <div className="h-45">
-            <img className="h-full w-full rounded-xl" src={image} alt={alt} />
-          </div>
+      <div
+        className={`block w-full p-2 md:p-0 rounded-xl shadow-xs bg-gray-100 ${className}`}
+      >
+        <div className="h-55 p-2">
+          <img className="h-full w-full rounded-xl" src={image} alt={alt} />
+        </div>
+        <div className="px-5 pb-5">
           <h5 className="mt-6 mb-2 text-2xl text-secondary font-semibold tracking-tight">
             {heading}
           </h5>
           <div className="hidden md:block py-3.5"></div>
-          <p className="mb-6 line-clamp-3">{description}</p>
+          <p className="mb-6 line-clamp-3 text-justify">{description}</p>
           <a
             href={to}
             target={target}
-            className="inline-flex items-center bg-gray-100 border border-gray-300 hover:bg-gray-300 shadow-xs font-medium leading-5 rounded-2xl text-sm px-4 py-2.5 transition duration-200"
+            className=" inline-flex items-center bg-gray-100 border border-gray-300 hover:bg-gray-300 shadow-xs font-medium leading-5 rounded-2xl text-sm px-4 py-2.5 transition duration-200"
           >
             Read more
             <svg
@@ -38,6 +49,7 @@ const CardPartnerU = ({ image, alt, heading, description, to, target}) => {
             </svg>
           </a>
         </div>
+      </div>
     </>
   );
 };

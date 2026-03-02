@@ -4,6 +4,7 @@ import about from "/src/assets/about.svg";
 import PBase from "../../PBase";
 import P18 from "../../P18";
 import Button from "../../Button";
+import { NavLink } from "react-router";
 
 const About = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
               <PBase
                 text={
                   "Empowering your future with the world’s most trusted higher education specialist"
-                } 
+                }
                 className={
                   "pt-3 lg:pt-5 text-primary font-medium lg:pr-30 text-center md:text-left"
                 }
@@ -35,9 +36,9 @@ const About = () => {
                 className={"lg:pr-20 py-3 lg:py-5 text-justify"}
               />
               <div className="w-full flex justify-center md:justify-normal">
-                <Button className={"font-bold"}>
-                  Book Your Appointment
-                </Button>
+                <NavLink to={"become-a-partner"}> 
+                  <Button className={"font-bold"}>Book Your Appointment</Button>
+                </NavLink>
               </div>
             </div>
           </div>

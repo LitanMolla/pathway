@@ -18,19 +18,19 @@ import slideSix from "/src/assets/segi-university.webp";
 import slideSeven from "/src/assets/Taylors-University.webp";
 import slideEight from "/src/assets/unirazak-university.jpg";
 import slideNine from "/src/assets/wollongong-university.jpg";
-import { FaAnglesRight, FaAnglesLeft } from "react-icons/fa6";
+import { FaChevronRight , FaChevronLeft } from "react-icons/fa6";
 import CardPartnerU from "../../CardPartnerU";
 import Heading from "../../Heading";
 
 const OurPartnersU = () => {
   return (
     <>
-      <section className="py-11 lg:py-20">
+      <section className="py-15 lg:py-20">
         <Container>
-          <div className="text-center pb-9">
+          <div className="text-center pb-8 lg:pb-12">
             <Heading
               text={"Our Partner University"}
-              className={"bg-secondary inline text-white"}
+              className={"inline text-secondary"}
             />
           </div>
           <div className="w-full overflow-visible relative">
@@ -47,7 +47,7 @@ const OurPartnersU = () => {
                   slidesPerView: 3,
                 },
               }}
-              spaceBetween={30}
+              spaceBetween={20}
               loop={true}
               pagination={{
                 clickable: true,
@@ -62,7 +62,7 @@ const OurPartnersU = () => {
               }}
               className="mySwiper"
             >
-              <SwiperSlide>
+              <SwiperSlide className="bg-white">
                 <CardPartnerU
                   to={"https://www.apu.edu.my/"}
                   target={"_blank"}
@@ -74,7 +74,7 @@ const OurPartnersU = () => {
                   }
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="bg-white">
                 <CardPartnerU
                   to={"https://cyberjaya.edu.my/"}
                   target={"_blank"}
@@ -86,7 +86,7 @@ const OurPartnersU = () => {
                   }
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="bg-white">
                 <CardPartnerU
                   to={"https://newinti.edu.my/"}
                   target={"_blank"}
@@ -173,11 +173,11 @@ const OurPartnersU = () => {
             </Swiper>
 
             {/* ================================ */}
-            <button className="custom-next hidden md:block absolute top-1/2 -right-5 -translate-y-1/2 z-10 cursor-pointer">
-              <FaAnglesRight className="text-4xl text-secondary" />
+            <button className="custom-next hidden md:block absolute top-1/2 -right-8 -translate-y-1/2 z-10 cursor-pointer">
+              <FaChevronRight  className="text-4xl text-gray-200" />
             </button>
-            <button className="custom-prev hidden md:block absolute top-1/2 -left-5 -translate-y-1/2 z-10 cursor-pointer">
-              <FaAnglesLeft className="text-4xl text-secondary" />
+            <button className="custom-prev hidden md:block absolute top-1/2 -left-8 -translate-y-1/2 z-10 cursor-pointer">
+              <FaChevronLeft className="text-4xl text-gray-200" />
             </button>
           </div>
         </Container>

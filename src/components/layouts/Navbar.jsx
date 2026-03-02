@@ -53,7 +53,7 @@ const Navbar = () => {
                     `px-3 py-2 font-medium text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg"
-                        : "text-secondary hover:text-primary hover:bg-gray-50"
+                        : "text-secondary hover:text-primary  "
                     }`
                   }
                 >
@@ -68,7 +68,7 @@ const Navbar = () => {
                     `px-3 py-2 font-medium text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg"
-                        : "text-secondary hover:text-primary hover:bg-gray-50"
+                        : "text-secondary hover:text-primary  "
                     }`
                   }
                 >
@@ -83,7 +83,7 @@ const Navbar = () => {
                     `px-3 py-2 font-medium text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
-                        : "text-secondary hover:text-primary hover:bg-gray-50"
+                        : "text-secondary hover:text-primary  "
                     }`
                   }
                 >
@@ -98,7 +98,7 @@ const Navbar = () => {
                     `px-3 py-2 font-medium text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
-                        : "text-secondary hover:text-primary hover:bg-gray-50"
+                        : "text-secondary hover:text-primary  "
                     }`
                   }
                 >
@@ -113,7 +113,7 @@ const Navbar = () => {
                     `px-3 py-2 font-medium text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
-                        : "text-secondary hover:text-primary hover:bg-gray-50"
+                        : "text-secondary hover:text-primary  "
                     }`
                   }
                 >
@@ -128,7 +128,7 @@ const Navbar = () => {
                     `px-3 py-2 font-medium text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
-                        : "text-secondary hover:text-primary hover:bg-gray-50"
+                        : "text-secondary hover:text-primary  "
                     }`
                   }
                 >
@@ -182,7 +182,7 @@ const Navbar = () => {
                       `block px-4 py-3 font-medium${
                         isActive
                           ? " text-primary border-b-2 border-primary shadow-lg"
-                          : "text-secondary hover:text-primary hover:bg-gray-50"
+                          : "text-secondary hover:text-primary  "
                       }`
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -197,7 +197,7 @@ const Navbar = () => {
                       `block px-4 py-3 font-medium${
                         isActive
                           ? " text-primary border-b-2 border-primary shadow-lg"
-                          : "text-secondary hover:text-primary hover:bg-gray-50"
+                          : "text-secondary hover:text-primary  "
                       }`
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -212,7 +212,7 @@ const Navbar = () => {
                       `block px-4 py-3 font-medium${
                         isActive
                           ? " text-primary border-b-2 border-primary shadow-lg"
-                          : "text-secondary hover:text-primary hover:bg-gray-50"
+                          : "text-secondary hover:text-primary  "
                       }`
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -227,7 +227,7 @@ const Navbar = () => {
                       `block px-4 py-3 font-medium${
                         isActive
                           ? " text-primary border-b-2 border-primary shadow-lg"
-                          : "text-secondary hover:text-primary hover:bg-gray-50"
+                          : "text-secondary hover:text-primary  "
                       }`
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -242,7 +242,7 @@ const Navbar = () => {
                       `block px-4 py-3 font-medium${
                         isActive
                           ? " text-primary border-b-2 border-primary shadow-lg"
-                          : "text-secondary hover:text-primary hover:bg-gray-50"
+                          : "text-secondary hover:text-primary  "
                       }`
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -257,7 +257,7 @@ const Navbar = () => {
                       `block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
                         isActive
                           ? "bg-tertiary text-primary border-b-2 border-primary"
-                          : "text-secondary hover:text-primary hover:bg-gray-50"
+                          : "text-secondary hover:text-primary  "
                       }`
                     }
                     onClick={() => setIsMobileMenuOpen(false)}
