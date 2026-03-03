@@ -13,7 +13,7 @@ const CardPartnerU = ({
   return (
     <>
       <div
-        className={`block w-full p-2 md:p-0 rounded-xl shadow-xs bg-gray-100 ${className}`}
+        className={`block w-full p-2 md:p-0 rounded-xl shadow-xs hover:shadow-lg transi duration-300 bg-gray-100 ${className}`}
       >
         <div className="h-55 p-2">
           <img className="h-full w-full rounded-xl" src={image} alt={alt} />
@@ -22,7 +22,7 @@ const CardPartnerU = ({
           <h5 className="mt-6 mb-2 text-2xl text-secondary font-semibold tracking-tight">
             {heading}
           </h5>
-          <div className="hidden md:block py-3.5"></div>
+          <div className="hidden md:block py-2.5"></div>
           <p className="mb-6 line-clamp-3 text-justify">{description}</p>
           <a
             href={to}

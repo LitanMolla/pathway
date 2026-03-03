@@ -62,7 +62,7 @@ const OurPartnersU = () => {
               }}
               className="mySwiper"
             >
-              <SwiperSlide className="bg-white">
+              <SwiperSlide  >
                 <CardPartnerU
                   to={"https://www.apu.edu.my/"}
                   target={"_blank"}
@@ -74,7 +74,7 @@ const OurPartnersU = () => {
                   }
                 />
               </SwiperSlide>
-              <SwiperSlide className="bg-white">
+              <SwiperSlide  >
                 <CardPartnerU
                   to={"https://cyberjaya.edu.my/"}
                   target={"_blank"}
@@ -86,7 +86,7 @@ const OurPartnersU = () => {
                   }
                 />
               </SwiperSlide>
-              <SwiperSlide className="bg-white">
+              <SwiperSlide  >
                 <CardPartnerU
                   to={"https://newinti.edu.my/"}
                   target={"_blank"}

@@ -3,14 +3,18 @@ import Container from "../../Container";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import round from "/src/assets/roundblur.svg";
 import { Link } from "react-router";
+import Handshake from "../../../assets/icons/handshake";
 
 const BecomeAPartner = () => {
   return (
     <>
       <section>
         <Container>
-          <div className="py-5 md:py-16 px-8 md:px-22 text-center md:text-left bg-primary rounded-2xl md:flex justify-between">
-            <p className="text-white font-extrabold text-3xl">
+          <div className="relative py-5 md:py-16 px-8 md:px-22 text-center md:text-left bg-primary rounded-2xl md:flex justify-between">
+            <div className="absolute top-2 left-2 -rotate-45">
+              <Handshake className={"size-40"}/>
+            </div>
+            <p className="text-white font-extrabold text-3xl relative">
               Become A Partner
             </p>
             <div className="relative mt-5 md:mt-0 flex justify-center md:flex-none">
