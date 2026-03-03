@@ -117,8 +117,8 @@ const ContactFormAddress = () => {
               {/* ============ location box ========= */}
               <div className="p-10 bg-secondary rounded-xl">
                 <div className="flex items-center gap-x-6">
-                  <div className="py-2 px-2 bg-primary rounded-full">
-                    <IoLocationOutline className="text-white text-6xl" />
+                  <div className="py-1.5 px-1.5 bg-primary rounded-full">
+                    <IoLocationOutline className="text-white text-[40px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-white pb-2">
@@ -138,8 +138,8 @@ const ContactFormAddress = () => {
               {/* ============ phone box ========= */}
               <div className="p-10 bg-secondary rounded-xl">
                 <div className="flex items-center gap-x-6">
-                  <div className="py-4 px-4 bg-primary rounded-full">
-                    <FiPhoneCall className="text-white text-[44px]" />
+                  <div className="py-3 px-3 bg-primary rounded-full">
+                    <FiPhoneCall className="text-white text-[32px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-white">Phone</h5>
@@ -152,8 +152,8 @@ const ContactFormAddress = () => {
               {/* ============ email box ========= */}
               <div className="p-10 bg-secondary rounded-xl">
                 <div className="flex items-center gap-x-6">
-                  <div className="py-3 px-3 bg-primary rounded-full">
-                    <MdOutlineMailOutline className="text-white text-[50px]" />
+                  <div className="py-2 px-2 bg-primary rounded-full">
+                    <MdOutlineMailOutline className="text-white text-[36px]" />
                   </div>
                   <div className="">
                     <h5 className="text-xl font-bold text-white">
@@ -242,7 +242,7 @@ const ContactFormAddress = () => {
                         loading ? "opacity-50 cursor-not-allowed" : ""
                       }`}
                     >
-                      Send Message
+                      Submit
                     </button>
                   </form>
                 </div>

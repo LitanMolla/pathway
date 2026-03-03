@@ -26,7 +26,7 @@ const BlogCards = () => {
             />
           </div>
           {/* ==================== */}
-          <div className="grid grid-cols-1 md:grid-cols-2 md:justify-between lg:grid-cols-3 gap-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10">
             {filteredBlogs?.map((item) => (
               <CardBlog
                 key={item.id}
