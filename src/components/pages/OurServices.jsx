@@ -90,9 +90,9 @@ const OurServices = () => {
               {services.map(
                 (item) =>
                   item.id === active.id && (
-                    <div key={item.id} className="grid gap-8 items-center">
+                    <div key={item.id} className="grid gap-y-3 items-center">
                       {/* IMAGE */}
-                      <div className="h-70 md:h-90 lg:h-130 overflow-hidden">
+                      <div className="w-auto md:w-80 lg:w-80 overflow-hidden mx-auto">
                         <img
                           src={item.image}
                           alt={item.title}
