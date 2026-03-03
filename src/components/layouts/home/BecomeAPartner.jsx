@@ -11,7 +11,7 @@ const BecomeAPartner = () => {
       <section>
         <Container>
           <div className="relative py-5 md:py-16 px-8 md:px-22 text-center md:text-left bg-primary rounded-2xl md:flex justify-between">
-            <div className="absolute top-2 left-2 -rotate-45">
+            <div className="hidden md:block absolute top-2 left-2 -rotate-45">
               <Handshake className={"size-40"}/>
             </div>
             <p className="text-white font-extrabold text-3xl relative">
