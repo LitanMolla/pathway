@@ -20,7 +20,7 @@ const CardBlog = ({ id, slug, src, title, date, description, miniLogo }) => {
     }
   };
   return (
-    <div className="group max-w-sm rounded-2xl bg-white shadow-sm transition-all duration-300 lg:hover:scale-[1.1] hover:shadow-xl border-l-4 border-transparent hover:border-secondary">
+    <div className="group max-w-sm rounded-2xl bg-white shadow-sm transition-all duration-800 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hover:scale-[1.20] hover:z-20 hover:shadow-xl border-l-4 border-transparent hover:border-secondary">
       {/* Image Section */}
       <div className="relative h-45 w-full overflow-hidden rounded-t-2xl">
         <img
