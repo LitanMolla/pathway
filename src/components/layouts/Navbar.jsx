@@ -50,7 +50,7 @@ const Navbar = () => {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    `px-3 py-2 font-medium text-base uppercase ${
+                    `px-3 py-2 font-bold text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg"
                         : "text-secondary hover:text-primary  "
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <NavLink
                   to="/about-us"
                   className={({ isActive }) =>
-                    `px-3 py-2 font-medium text-base uppercase ${
+                    `px-3 py-2 font-bold text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg"
                         : "text-secondary hover:text-primary  "
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <NavLink
                   to="/university"
                   className={({ isActive }) =>
-                    `px-3 py-2 font-medium text-base uppercase ${
+                    `px-3 py-2 font-bold text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary  "
@@ -95,7 +95,7 @@ const Navbar = () => {
                 <NavLink
                   to="/our-services"
                   className={({ isActive }) =>
-                    `px-3 py-2 font-medium text-base uppercase ${
+                    `px-3 py-2 font-bold text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary  "
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <NavLink
                   to="/blogs"
                   className={({ isActive }) =>
-                    `px-3 py-2 font-medium text-base uppercase ${
+                    `px-3 py-2 font-bold text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary  "
@@ -125,7 +125,7 @@ const Navbar = () => {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `px-3 py-2 font-medium text-base uppercase ${
+                    `px-3 py-2 font-bold text-base uppercase ${
                       isActive
                         ? " text-primary border-b-2 border-primary shadow-lg  "
                         : "text-secondary hover:text-primary  "

@@ -11,6 +11,7 @@ import BecomeAPartner from "../components/pages/BecomeAPartner";
 import universityDetails from "../components/layouts/university/universityDetails";
 import Login from "../components/pages/Login";
 import Signup from "../components/pages/Signup";
+import Error from "../components/pages/Error";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ const AppRoutes = createBrowserRouter([
       {
         path: "become-a-partner",
         Component: BecomeAPartner,
+      },
+      {
+        path: "*",
+        Component: Error,
       },
     ],
   },
