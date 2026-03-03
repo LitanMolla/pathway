@@ -34,7 +34,7 @@ const YourJuorney = () => {
               <p className="text-2xl lg:text-[32px] font-semibold secondary">
                 Step 1
               </p>
-              <h3 className="text-4xl md:text-5xl lg:text-5xl text-primary font-extrabold pr-5 uppercase">
+              <h3 className="text-4xl md:text-[42px] lg:text-5xl text-primary font-extrabold pr-5 uppercase">
                 Choose your pathway
               </h3>
               <P18
@@ -48,12 +48,12 @@ const YourJuorney = () => {
             {/* =============== step 1============ */}
 
             {/* =============== step 2============ */}
-            <div className="relative my-60 lg:my-16 mr-17 flex lg:justify-end">
+            <div className="relative my-60 md:my-30 lg:my-16 mr-17 flex lg:justify-end">
               <div className="z-10 max-w-200 absolute top-0 left-20 md:left-50 lg:left-0">
                 <p className="text-2xl lg:text-[32px] font-semibold secondary">
                   Step 2
                 </p>
-                <h3 className="text-4xl md:text-5xl lg:text-5xl text-primary font-extrabold uppercase">
+                <h3 className="text-4xl md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
                   Support with every step
                 </h3>
                 <P18
@@ -74,7 +74,7 @@ const YourJuorney = () => {
 
             {/* =============== step 3============ */}
             <div className="relative">
-              <div className="absolute bottom-0 lg:-bottom-72 lg:left-110 rounded-full py-47 md:py-70 lg:py-140 px-8.5 md:px-20 lg:px-29.5 lg:rotate-71 bg-linear-to-b from-secondary to-[#d5d5ff] z-0"></div>
+              <div className="absolute bottom-0 lg:-bottom-72 lg:left-110 rounded-full py-47 md:py-55 lg:py-140 px-8.5 md:px-20 lg:px-29.5 lg:rotate-71 bg-linear-to-b from-secondary to-[#d5d5ff] z-0"></div>
               <div className="relative w-17 h-17 md:w-40 md:h-40 lg:w-60 lg:h-60 rounded-full bg-yellow-100 z-10">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
@@ -89,7 +89,7 @@ const YourJuorney = () => {
                 <p className="text-2xl lg:text-[32px] font-semibold secondary">
                   Step 3
                 </p>
-                <h3 className="text-4xl md:text-5xl lg:text-5xl text-primary font-extrabold uppercase">
+                <h3 className="text-4xl md:text-[42px] lg:text-5xl text-primary font-extrabold uppercase">
                   Gain entry to your dream university
                 </h3>
                 <P18
