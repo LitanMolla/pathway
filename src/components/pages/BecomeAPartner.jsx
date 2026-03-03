@@ -30,16 +30,16 @@ const BecomeAPartner = () => {
   };
 
   // checkbox handler
-  const handleCheckboxChange = (e) => {
-    const { value, checked } = e.target;
+  // const handleCheckboxChange = (e) => {
+  //   const { value, checked } = e.target;
 
-    setFormData((prev) => ({
-      ...prev,
-      universities: checked
-        ? [...prev.universities, value]
-        : prev.universities.filter((item) => item !== value),
-    }));
-  };
+  //   setFormData((prev) => ({
+  //     ...prev,
+  //     universities: checked
+  //       ? [...prev.universities, value]
+  //       : prev.universities.filter((item) => item !== value),
+  //   }));
+  // };
 
   // file handler
   const handleFileChange = (e) => {
@@ -269,7 +269,7 @@ const BecomeAPartner = () => {
                     </div>
 
                     {/* =========== university checkbox ====== */}
-                    <div className="flex flex-col gap-y-3 lg:my-15">
+                    {/* <div className="flex flex-col gap-y-3 lg:my-15">
                       <label className="text-sm font-medium text-gray-700 lg:mb-3">
                         Choose University{" "}
                         <span className="text-red-500">*</span>
@@ -292,7 +292,7 @@ const BecomeAPartner = () => {
                           </label>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
                     {/* =========== university checkbox ====== */}
 
                     {/* =====field====== */}
@@ -337,7 +337,7 @@ const BecomeAPartner = () => {
                         loading ? "opacity-50 cursor-not-allowed" : ""
                       }`}
                     >
-                      Send Message
+                      Submit
                     </button>
                   </form>
                 </div>

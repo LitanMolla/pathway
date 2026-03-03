@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../../Container";
-import Button from "../../Button";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import round from "/src/assets/roundblur.svg";
 import { Link } from "react-router";
@@ -22,12 +21,16 @@ const BecomeAPartner = () => {
                 <img src={round} alt="" className="size-20 md:size-33" />
               </div>
               <Link to={"/become-a-partner"}>
-                <Button className={"relative z-10"}>
+                <button
+                  className={
+                    "relative z-10 py-3 lg:py-3 px-3 lg:px-4 text-[12px] md:text-[14px] text-base font-medium lg:font-bold rounded-xl bg-secondary text-white cursor-pointer hover:text-blue-400 transition duration-300"
+                  }
+                >
                   <div className="flex items-center">
                     <p className="font-bold tracking-widest">Apply Now </p>
                     <FaLongArrowAltRight />
                   </div>
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
