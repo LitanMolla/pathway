@@ -36,10 +36,8 @@ const Navbar = () => {
       <Container>
         <div className="hidden lg:flex justify-between items-center">
           {/* Logo */}
-          <NavLink to={"/"} className="max-w-35">
-            <picture>
-              <img src={logo} alt="logo" />
-            </picture>
+          <NavLink to={"/"} className="max-w-35 aspect-3/1">
+            <img src={logo} alt="logo" className="w-full h-full" />
           </NavLink>
           {/* Logo */}
 
@@ -136,7 +134,6 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-
           </div>
         </div>
       </Container>
@@ -152,7 +149,6 @@ const Navbar = () => {
           {/* Logo */}
 
           <div className="flex items-center gap-x-3 ">
-            
             <button
               className="lg:hidden "
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

@@ -1,4 +1,3 @@
-
 import Banner from "../layouts/home/Banner";
 import About from "../layouts/home/About";
 import YourJuorney from "../layouts/home/YourJuorney";
@@ -26,11 +25,11 @@ const Home = () => {
   if (showLoader) return <Loader />;
   return (
     <>
-      <Banner />
-      <About />
-      <YourJuorney />
-      <OurPartnersU />
-      <BecomeAPartner />
+        <Banner />
+        <About />
+        <YourJuorney />
+        <OurPartnersU />
+        <BecomeAPartner />
     </>
   );
 };
